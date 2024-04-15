@@ -1,0 +1,171 @@
+/* estilos.css */
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0099CC;
+    color: white;
+    padding: 10px 0;
+    justify-content: flex-start; /* Esto alinea los elementos al principio del contenedor */
+}
+
+body {
+    /* ... tus otros estilos de body ... */
+    background-image: url('https://images7.alphacoders.com/596/596555.jpg'); /* Ajusta la ruta relativa */
+    background-size: cover; /* Esto asegura que la imagen cubra todo el body */
+    background-position: center; /* Centra la imagen en el body */
+    background-attachment: fixed; /* Esto hará que la imagen de fondo sea fija al hacer scroll */
+}
+
+/* Estilos para crear una superposición de color negro transparente en todo el body */
+body::before {
+    content: "";
+    position: fixed; /* Se usa fixed para cubrir toda la pantalla y que sea independiente del scroll */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad al nivel que prefieras */
+    z-index: -1; /* Se coloca detrás del contenido */
+}
+
+
+#logo {
+    width: 150px;
+    /* Ajusta el margen a tu gusto */
+    margin-right: 20px; /* Puedes aumentar o disminuir este valor */
+}
+
+h1 {
+    flex-grow: 0; /* Establecer a 0 para evitar que el título crezca más de lo necesario */
+    font-size: 2em;
+    /* Ajusta el margen a tu gusto */
+    margin-right: 150px; /* Puedes aumentar o disminuir este valor */
+}
+
+/* Para cambiar las fuentes del título y las secciones */
+h1 {
+    font-family: 'FuenteDeseada', Arial, sans-serif;
+    font-size: 2.5em; /* Ajusta el tamaño a tu gusto */
+    font-weight: bold; /* Puedes cambiar esto por normal, light, etc. */
+}
+
+nav {
+    flex-grow: 2; /* Esto permitirá que la navegación tome el doble de espacio que el título */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Esto distribuirá los elementos uniformemente */
+    align-items: center; /* Centra los elementos verticalmente */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; 
+}
+
+nav ul li {
+    padding: 0 10px; /* Añade padding a los lados de cada elemento de la lista */
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'FuenteDeseada', Arial, sans-serif;
+    font-size: 1.2em; /* Ajusta el tamaño a tu gusto */
+    font-weight: bold; /* O el grosor que prefieras */
+}
+
+/*Parte del diagrama de purificación del agua*/
+#servicios-purificacion {
+    background: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad al nivel que prefieras */ /* Un color de fondo claro, ajusta según tu diseño */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional, para darle un poco de profundidad */
+}
+
+#servicios-purificacion .container {
+    display: flex;
+    justify-content: space-between; /* Esto separa los dos elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+#servicios-purificacion .process-description {
+    flex-basis: 50%; /* O ajusta según el espacio que quieras que ocupe */
+}
+
+#servicios-purificacion .process-diagram {
+    flex-basis: 50%; /* Ajusta según necesidad */
+}
+
+#servicios-purificacion h2 {
+    color: #005082; /* Un color que contraste con el fondo */
+    margin-bottom: 15px; /* Espacio entre el título y la lista */
+}
+
+#servicios-purificacion ul {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Restablece el padding */
+    margin: 0; /* Restablece los márgenes */
+}
+
+#servicios-purificacion ul li {
+    margin-bottom: 10px; /* Espacio entre los ítems de la lista */
+}
+
+#servicios-purificacion button {
+    background-color: #0077AA; /* Color del botón, ajusta según tu paleta */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Un efecto suave al cambiar de color */
+}
+
+#servicios-purificacion button:hover {
+    background-color: #005f7a; /* Un tono más oscuro al pasar el mouse */
+}
+
+/*Parte de info adicional de la página principal*/
+
+#informacion-adicional {
+    display: flex;
+    justify-content: space-around; /* Esto distribuirá las columnas uniformemente */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.columna {
+    flex-basis: 30%; /* Ajusta esto para cambiar el ancho de las columnas */
+    background: rgba(255, 255, 255, 0.5); /* Ajusta la opacidad al nivel que prefieras */ /* Un color de fondo claro, ajusta según tu diseño */
+    padding: 10px;
+    margin: 10px; /* Añade espacio alrededor de las columnas */
+    text-align: center; /* Centra el texto dentro de la columna */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Opcional, para dar profundidad */
+}
+
+.columna h3 {
+    margin-top: 0; /* Elimina el margen superior para el título si es necesario */
+}
+
+.columna img {
+    width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 15px; /* Espacio después de la imagen */
+}
+
+/* Añade estilos adicionales según sea necesario */
+
+
+/* Resto de estilos... */
+
+
+section {
+    padding: 100px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #0077AA;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
