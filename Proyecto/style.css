@@ -14,6 +14,8 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin: 0; /* Eliminamos el margen */
+    padding: 0; /* Eliminamos el padding */
 }
 
 body::before {
@@ -28,7 +30,7 @@ body::before {
 }
 
 #logo {
-    width: 150px;
+    width: 200px;
     margin-right: 20px;
 }
 
@@ -77,15 +79,6 @@ nav ul li a {
     justify-content: space-between;
     align-items: center;
 }
-
-#servicios-purificacion .process-description {
-    flex-basis: 50%;
-}
-
-#servicios-purificacion .process-diagram {
-    flex-basis: 50%;
-}
-
 #servicios-purificacion h2 {
     color: #005082;
     margin-bottom: 15px;
@@ -150,11 +143,6 @@ footer {
     color: white;
     padding: 10px 0;
     text-align: center;
-}
-
-.process-diagram img {
-    max-width: 90%;
-    height: auto;
 }
 
 .image-title {
@@ -275,10 +263,6 @@ footer {
 
 .text-container {
     flex: 1;
-}
-
-.image-container {
-    flex-basis: 50%;
 }
 
 .order-service-link {
@@ -416,17 +400,6 @@ ul {
     cursor: pointer;
 }
 
-#servicios-purificacion .process-diagram {
-    flex-basis: 100%; /* Aumentamos el espacio del contenedor del diagrama */
-}
-
-.process-diagram img {
-    width: 1000%; /* La imagen ocupará todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-}
-
-
-
 nav ul li a {
     color: white;
     font-family: 'FuenteDeseada', Arial, sans-serif;
@@ -532,7 +505,7 @@ nav ul li a:hover {
     text-align: center; /* Centra el texto */
 }
 #servicios-purificacion .process-diagram img {
-    width: 130%; /* Aseguramos que la imagen ocupe todo el ancho del contenedor */
+    width: 220%; /* Aseguramos que la imagen ocupe todo el ancho del contenedor */
     height: auto; /* Mantenemos la proporción de la imagen */
     max-width: none; /* Quitamos el ancho máximo establecido anteriormente */
 }
@@ -676,5 +649,260 @@ footer {
 }
 
 .footer-info {
+    text-align: center; /* Centrar el texto */
+}
+#servicios-purificacion,
+#informacion-adicional {
+    margin-bottom: 50px; /* Espacio entre secciones */
+}
+
+footer {
+    background-color: #0099CC; /* Color del panel de navegación superior */
+    color: white; /* Color de texto blanco para contraste */
+    padding: 20px 0; /* Padding superior e inferior */
+    text-align: center; /* Centrar el contenido */
+    position: relative; /* Posición relativa para centrar verticalmente */
+    bottom: 0; /* Alineamos al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+.footer-info {
+    text-align: center; /* Centrar el texto */
+}
+
+/* Footer */
+footer {
+    background-color: #0099CC;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+main {
+    margin-bottom: 0px; /* Ajusta este valor según lo que necesites */
+}
+
+footer {
+    margin-top: 0px; /* Ajusta este valor según lo que necesites */
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el contenedor */
+.container {
+    margin: auto;
+    max-width: 800px;
+}
+#certificaciones {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 50px 0; /* Espacio alrededor del contenido */
+    text-align: center; /* Centrar el texto */
+}
+
+#certificaciones .container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay espacio */
+}
+
+#certificaciones p {
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+#informacion-adicional {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    flex-wrap: wrap;
+    padding: 20px 0; /* Espacio alrededor de la sección */
+}
+
+.columna {
+    flex: 1; /* Cada columna toma el mismo espacio */
+    margin: 15px; /* Margen alrededor de cada columna */
+    text-align: center; /* Centra el texto y la imagen */
+}
+
+.columna h3 {
+    font-size: 1.5em; /* Tamaño de fuente para los títulos */
+    margin-bottom: 15px; /* Espacio inferior */
+    color: #333; /* Color del texto */
+}
+
+.location-image-container img,
+.horario img,
+.promo-section img {
+    max-width: 100%; /* Imagen se ajusta al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.promo-section p {
+    text-align: center; /* Centra el texto */
+    margin: 10px 0; /* Espacio alrededor del texto */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.product-grid img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-grid img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Estilos para la sección de Productos */
+.product-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco ligeramente transparente */
+    padding: 40px 0; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px; /* Espaciado entre imágenes */
+}
+
+.product-grid a {
+    display: block; /* Convertir en bloque para que ocupe todo el espacio disponible */
+}
+
+.product-grid img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease-in-out; /* Transición al hacer hover */
+}
+
+.product-grid img:hover {
+    transform: scale(1.05); /* Escalar la imagen al hacer hover */
+}
+/* Estilos para las secciones de Contacto */
+.contact-section {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco más transparente */
+    padding: 40px 0; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+    font-family: 'Arial', sans-serif; /* Fuente Arial */
+}
+
+.contact-section h2,
+.social-section h2 {
+    margin-bottom: 20px; /* Espaciado inferior para el título */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color de texto oscuro */
+}
+
+.contact-section p {
+    margin-bottom: 20px; /* Espaciado inferior para la dirección */
+    color: #555; /* Color de texto más oscuro */
+}
+
+.contact-section .contact-image {
+    width: 30%; /* Ancho de la imagen del 50% del contenedor */
+    height: auto; /* Altura automática */
+    margin-top: 20px; /* Espaciado superior para la imagen */
+    transition: transform 0.3s ease-in-out; /* Transición al hacer hover */
+}
+
+.contact-section .contact-image:hover {
+    transform: scale(1.05); /* Escalar la imagen al hacer hover */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
+}
+
+.social-section {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semitransparente */
+    padding: 40px 0; /* Espaciado interior */
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaciado entre botones */
+}
+
+.social-btn img {
+    width: 50px; /* Tamaño de los botones de redes sociales */
+    height: 50px;
+    border-radius: 50%; /* Bordes redondeados para que sean circulares */
+    transition: transform 0.3s ease-in-out; /* Transición al hacer hover */
+}
+
+.social-btn img:hover {
+    transform: scale(1.1); /* Escalar el botón al hacer hover */
+}
+
+.social-section h2 {
     text-align: center; /* Centrar el texto */
 }
