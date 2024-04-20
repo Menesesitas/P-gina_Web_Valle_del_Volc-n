@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio - Valle del Volcán</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public-target-style.css">
+</head>
+<body>
+
+    <!-- Header y navegación -->
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Logo Valle del Volcán" id="logo">
+        </a>
+        <h1>Valle del Volcán</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="servicio.html">Servicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="sucursal.html">Sucursal</a></li>
+                <!-- Botones de contacto -->
+                <li class="nav-item">
+                    <a href="https://api.whatsapp.com/send?phone=2215304660" class="nav-btn whatsapp-btn" target="_blank">
+                        <img src="images/whats.png" alt="WhatsApp" />
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/VALLEDELVOLCAN" class="nav-btn" target="_blank" style="margin-left: 5px;">
+                        <img src="images/telegram.png" alt="Telegram" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="servicioSection">
+            <h2>Servicio de Entrega de Agua Purificada</h2>
+            <p>Brindamos un servicio de calidad para garantizar tu hidratación y la de tu familia o negocio.</p>
+            
+            <!-- Cuadros para información -->
+            <div class="info-box">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+            </div>
+            
+            <div class="info-box">
+                <label for="telefono">Teléfono de Contacto:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe tu teléfono">
+            </div>
+            
+            <div class="info-box">
+                <label for="direccion">Dirección de Entrega:</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Escribe tu dirección">
+            </div>
+            
+            <div class="info-box">
+                <label for="garrafones">Cantidad de Garrafones:</label>
+                <input type="number" id="garrafones" name="garrafones" placeholder="Número de garrafones">
+            </div>
+            
+            <div class="info-box">
+                <label for="horario">Horario de Entrega:</label>
+                <input type="text" id="horario" name="horario" placeholder="Indica tu horario preferido">
+            </div>
+            
+            <!-- Botón de ordenar -->
+            <button class="order-btn">Ordenar Ahora</button>
+        </section>
+    </main>
+
+    !-- Footer -->
+    <footer>
+        <!-- Información de contacto -->
+        <div class="footer-info">
+            <p>Teléfono: 221-530-4660</p>
+            <p>Email: info@valledelvolcan.com</p>
+        </div>
+    </footer>
+
+</body>
+</html>
